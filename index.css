@@ -27,16 +27,12 @@ body{
 }
 
 .wrapper {
-  margin: 20px;
+  background-color: rgb(215, 224, 221);
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
-}
-
-header{
-  background-color: aquamarine;
 }
 
 .header-flex {
@@ -119,17 +115,120 @@ main{
 
 .top-baner-link a:hover{
   color: #000;
+}
 
+/* --------------------------------------------- */
+
+.baner-polaroid-collaction {
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.baner-polaroid-collaction-item{
+  font-size: 32px;
+  margin: 0 0 15px 0 ;
+}
+.baner-polaroid-collaction-text {
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0 0 15px 0;
+    text-align: center;
+    color: rgb(68, 65, 65);
+}
+.baner-polaroid-collaction-link a{
+  font-size: 24px;
+  color: #000;
+}
+.shop-womens {
+}
+.shop-womens::before{
+  content:'';
+  border-left: 3px solid #000;
+  margin: 0 10px;
+}
+
+.baner-polaroid-collaction-link a:hover{
+  text-decoration: underline;
+}
+/* ------------------------------------------------------------------------------ */
+
+.baner-slideshow {
+}
+.baner-slideshow-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.baner-slideshow-text {
+  font-size: 32px;
+}
+.baner-slideshow-button {
+  display: flex;
+}
+.btn-prev {
+  margin: 0 20px;
+  font-size: 22px;
+  background-color: rgb(215, 224, 221) ;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+}
+.btn-next {
+  font-size: 22px;
+  background-color: rgb(215, 224, 221) ;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+}
+.baner-slideshow-container {
+  overflow: hidden;
+}
+.slider-track {
+  display: flex;
+  transition: 0.2s;
+}
+.slider-items {
+  margin: 20px 16.6px;
+  min-width: 400px;
+  height: 300px;
+}
+
+.slide-block-image-text{
+  height: 500px;
+}
+.slider-items p{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0 ;
+}
+.slider-dots-item {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 7px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.slider-dots-item:last-child{
+  margin: 0;
+}
+.active-dots {
+  background-color: blue;
 }
 
 
 
 
 
-
-
-
-
+/* ------------------------------------------------------------------------------ */
 
 footer{
   
