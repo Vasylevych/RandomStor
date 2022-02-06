@@ -16,11 +16,11 @@ img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 /* ------------------------------------------------------------------------------------ */
-html, body{
+html, body {
   height: 100%;
 }
 
-body{
+body {
  min-height: 100%;
  display: flex;
  flex-direction: column;
@@ -35,8 +35,8 @@ body{
   margin: 0 auto;
 }
 
-header{
-  background-color: aquamarine;
+header {
+  background-color: #931;
 }
 
 .header-flex {
@@ -45,36 +45,36 @@ header{
   align-items: center;
 }
 
-.header-logo a{
+.header-logo a {
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
 }
 
-.header-navigation ul{
+.header-navigation ul {
   display: flex;
 }
 
-.header-navigation li a{
+.header-navigation li a {
   margin: 0 20px 0 0;
   color: black;
 }
 
-.header-info ul{
+.header-info ul {
   display: flex;
 }
 
-.header-info li a{
+.header-info li a {
   margin: 0 20px 0 0;
   color: black;
 }
 
-.header-info li a:hover, .header-navigation li a:hover{
+.header-info li a:hover, .header-navigation li a:hover {
   text-decoration: underline;
 }
 /* ------------------------------------------------------------- */
 
-main{
+main {
   min-height: calc(100vh - 80px);
 }
 
@@ -106,33 +106,25 @@ main{
   transition: 1s ease all;
 }
 
-.top-baner-link a{
+.top-baner-link a {
   color: rgb(255, 255, 255);
   font-size: 20px;
   transition: 1s ease all;
 }
 
-.top-baner-link:hover{
+.top-baner-link:hover {
   background-color: rgb(43, 183, 226);
 
 }
 
-.top-baner-link a:hover{
+.top-baner-link a:hover {
   color: #000;
 
 }
 
-
-
-
-
-
-
-
-
-
-footer{
+footer {
   
-  background-color: blueviolet;
+  background-color: #009
+  ;
   
 }
