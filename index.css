@@ -190,9 +190,11 @@ main {
 .baner-slideshow-text {
   font-size: 32px;
 }
+
 .baner-slideshow-button {
   display: flex;
 }
+
 .btn-prev {
   margin: 0 20px;
   font-size: 22px;
@@ -201,6 +203,7 @@ main {
   width: 40px;
   height: 30px;
 }
+
 .btn-next {
   font-size: 22px;
   background-color: #FAF9F9;
@@ -253,6 +256,7 @@ main {
 .slider-dots-item:last-child{
   margin: 0;
 }
+
 .active-dots {
   background-color: #0000EB;
 }
@@ -273,7 +277,7 @@ main {
 
 .bloce-style-text {
   font-size: 24px;
-  color: rgb(109, 101, 101);
+  color: #6D6565;
 }
 
 .polo-flex {
