@@ -27,6 +27,7 @@ body {
 
 .wrapper {
   background-color: #D7E0DD;
+  margin: 20px;
 }
 
 .container {
@@ -123,6 +124,7 @@ main{
   justify-content: center;
   align-items: center;
 }
+/* main page */
 
 .baner-polaroid-collaction-item {
   font-size: 32px;
