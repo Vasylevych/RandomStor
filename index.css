@@ -14,6 +14,29 @@ ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
+@font-face {
+	font-family: 'AvenirLTStd';
+	src: url('fonts/AvenirLTStd-Book.eot');
+	src: local('вє'), url('fonts/AvenirLTStd-Book.woff') format('woff'), url('fonts/AvenirLTStd-Book.ttf') format('truetype'), url('fonts/AvenirLTStd-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirLTStd';
+	src: url('fonts/AvenirLTStd-Black.eot');
+	src: local('вє'), url('fonts/AvenirLTStd-Black.woff') format('woff'), url('fonts/AvenirLTStd-Black.ttf') format('truetype'), url('fonts/AvenirLTStd-Black.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirLTStd';
+	src: url('fonts/AvenirLTStd-Roman.eot');
+	src: local('вє'), url('fonts/AvenirLTStd-Roman.woff') format('woff'), url('fonts/AvenirLTStd-Roman.ttf') format('truetype'), url('fonts/AvenirLTStd-Roman.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
 
 html, body {
   height: 100%;
@@ -26,8 +49,8 @@ body {
 }
 
 .wrapper {
-  background-color: #D7E0DD;
-  margin: 20px;
+  background-color: #FAF9F9;
+  font-family: AvenirLTStd;
 }
 
 .container {
@@ -41,10 +64,16 @@ body {
   align-items: center;
 }
 
-.header-logo a {
-  font-size: 40px;
-  text-transform: uppercase;
+.header-logo a{
+  font-size: 28px;
   color: #000;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.header-logo img {
+  margin: 0 0 0 10px;
 }
 
 .header-navigation ul {
@@ -68,25 +97,26 @@ body {
 .header-info li a:hover, .header-navigation li a:hover {
   text-decoration: underline;
 }
-/* main page */
 
-main{
+main {
   min-height: calc(100vh - 80px);
 }
 
 .top-baner-block {
   background: url(https://manrule.ru/images/article/orig/2020/03/muzhskaya-odezhda-lacoste-assortiment-i-tablica-razmerov.jpg) no-repeat;
   height: 750px;
+  position: relative;
 }
 
 .top-baner-block-text {
   max-width: 1300px;
-  margin: 200px auto;
-  z-index: 2;
+  margin: 50px 0 0 20px;
+  position: absolute;
 }
 
 .top-baner-item {
   font-size: 42px;
+  font-weight: 500;
 }
 
 .top-baner-text {
@@ -97,7 +127,7 @@ main{
 .top-baner-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2D8B56;
+  background-color: #2E8B57;
   margin: 30px 0;
   transition: 1s ease all;
 }
@@ -110,7 +140,6 @@ main{
 
 .top-baner-link:hover {
   background-color: #2BB7E2;
-
 }
 
 .top-baner-link a:hover {
@@ -124,7 +153,6 @@ main{
   justify-content: center;
   align-items: center;
 }
-/* main page */
 
 .baner-polaroid-collaction-item {
   font-size: 32px;
@@ -170,7 +198,7 @@ main{
 .btn-prev {
   margin: 0 20px;
   font-size: 22px;
-  background-color: #D7E0DD;
+  background-color: #FAF9F9;
   text-align: center;
   width: 40px;
   height: 30px;
@@ -178,7 +206,7 @@ main{
 
 .btn-next {
   font-size: 22px;
-  background-color: #D7E0DD;
+  background-color: #FAF9F9;
   text-align: center;
   width: 40px;
   height: 30px;
@@ -221,19 +249,105 @@ main{
   height: 15px;
   border-radius: 50%;
   margin-right: 7px;
-  background-color: #eee;
+  background-color: #ECEAEA;
   cursor: pointer;
 }
 
-.slider-dots-item:last-child {
+.slider-dots-item:last-child{
   margin: 0;
 }
 
 .active-dots {
-  background-color: #007;
+  background-color: #0000EB;
 }
-/*footer*/
 
-footer {
-  background-color: #074507;
+.image-style {
+  margin: 50px 0;
+  position: relative;
 }
+
+.style-with-comfort-text {
+  position: absolute;
+  margin: -700px 0 0 60px;
+}
+
+.bloce-style-item {
+  font-size: 34px;
+}
+
+.bloce-style-text {
+  font-size: 24px;
+  color: #6D6565;
+}
+
+.polo-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 50px 0 ;
+}
+
+.polo-shop-item {
+  font-size: 34px;
+}
+
+.polo-shop-text {
+  font-size: 24px;
+  color: #6D6565;
+}
+
+footer a {
+  color: #6D6565;
+  margin: 10px 0 0 0;
+}
+
+footer a:last-child {
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 50px 0 20px 0 ;
+}
+
+.line {
+  border-top: 2px solid #6D6565;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* main page */
+
+.mail-contry, .mail {
+  margin: 20px 0;
+}
+
+.mail, .country, .mail input {
+  height: 22px;
+  font-size: 20px;
+  box-shadow: 2px 2px 2px  #6D6565;
+  background: #FAF9F9;
+}
+
+.oll-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+}
+
