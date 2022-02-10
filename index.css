@@ -26,16 +26,13 @@ body {
 }
 
 .wrapper {
+  background-color: #D7E0DD;
   margin: 20px;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
-}
-
-header {
-  background-color: #993311;
 }
 
 .header-flex {
@@ -47,7 +44,7 @@ header {
 .header-logo a {
   font-size: 40px;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
 }
 
 .header-navigation ul {
@@ -56,7 +53,7 @@ header {
 
 .header-navigation li a {
   margin: 0 20px 0 0;
-  color: #000000;
+  color: #000;
 }
 
 .header-info ul {
@@ -65,7 +62,7 @@ header {
 
 .header-info li a {
   margin: 0 20px 0 0;
-  color: #000000;
+  color: #000;
 }
 
 .header-info li a:hover, .header-navigation li a:hover {
@@ -73,7 +70,7 @@ header {
 }
 /* main page */
 
-main {
+main{
   min-height: calc(100vh - 80px);
 }
 
@@ -100,25 +97,143 @@ main {
 .top-baner-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #36925F;
+  background-color: #2D8B56;
   margin: 30px 0;
   transition: 1s ease all;
 }
 
 .top-baner-link a {
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   transition: 1s ease all;
 }
 
 .top-baner-link:hover {
-  background-color: #2BB9E1;
+  background-color: #2BB7E2;
+
 }
 
 .top-baner-link a:hover {
-  color: #000000;
+  color: #000;
 }
 
+.baner-polaroid-collaction {
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* main page */
+
+.baner-polaroid-collaction-item {
+  font-size: 32px;
+  margin: 0 0 15px 0 ;
+}
+
+.baner-polaroid-collaction-text {
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0 0 15px 0;
+    text-align: center;
+    color: #444141;
+}
+
+.baner-polaroid-collaction-link a {
+  font-size: 24px;
+  color: #000;
+}
+
+.shop-womens::before {
+  content:'';
+  border-left: 3px solid #000;
+  margin: 0 10px;
+}
+
+.baner-polaroid-collaction-link a:hover {
+  text-decoration: underline;
+}
+
+.baner-slideshow-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.baner-slideshow-text {
+  font-size: 32px;
+}
+
+.baner-slideshow-button {
+  display: flex;
+}
+
+.btn-prev {
+  margin: 0 20px;
+  font-size: 22px;
+  background-color: #D7E0DD;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+}
+
+.btn-next {
+  font-size: 22px;
+  background-color: #D7E0DD;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+}
+
+.baner-slideshow-container {
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: 0.2s;
+}
+
+.slider-items {
+  margin: 20px 16.6px;
+  min-width: 400px;
+  height: 300px;
+}
+
+.slide-block-image-text {
+  height: 500px;
+}
+
+.slider-items p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0 ;
+}
+
+.slider-dots-item {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 7px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.slider-dots-item:last-child {
+  margin: 0;
+}
+
+.active-dots {
+  background-color: #007;
+}
+/*footer*/
+
 footer {
-  background-color: #000099;
+  background-color: #074507;
 }
