@@ -49,3 +49,34 @@ const checkBtns = () => {
 };
 
 checkBtns();
+
+
+let dots = document.getElementsByClassName('circle');
+let dotsArea = document.getElementsByClassName('circle-block')[0];
+let slides = document.getElementsByClassName('blocke-sale-slider');
+let prevBtn = document.getElementsByClassName('sale-prev');
+let nextBtn = document.getElementsByClassName('sale-next');
+slideIndex = 1;
+
+// showSlides(slideIndex);
+
+// function showSlides(n){
+//     if (n < 1){
+//         slideIndex= slides.length;
+//     } else if (n > slides.length){
+//         slideIndex = 1;
+//     }
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = 'none'; 
+//     };
+//     for (let i = 0; i < dots.length; i++) {
+//         dots[i].classList.remove('active'); 
+//     }
+//     slides[slideIndex - 1].style.display = 'flex';
+//     // dots[slideIndex - 1].classList.add('active');
+// }
+
+// prevBtn.addEventListener('click', function(e){
+//     let sides = e.target.dataset.side;
+//     console.log(sides);
+//  })

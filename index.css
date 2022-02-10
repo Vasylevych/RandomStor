@@ -16,26 +16,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 @font-face {
 	font-family: 'AvenirLTStd';
-	src: url('fonts/AvenirLTStd-Book.eot');
-	src: local('вє'), url('fonts/AvenirLTStd-Book.woff') format('woff'), url('fonts/AvenirLTStd-Book.ttf') format('truetype'), url('fonts/AvenirLTStd-Book.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'AvenirLTStd';
 	src: url('fonts/AvenirLTStd-Black.eot');
 	src: local('вє'), url('fonts/AvenirLTStd-Black.woff') format('woff'), url('fonts/AvenirLTStd-Black.ttf') format('truetype'), url('fonts/AvenirLTStd-Black.svg') format('svg');
-	font-weight: 500;
+	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvenirLTStd';
-	src: url('fonts/AvenirLTStd-Roman.eot');
-	src: local('вє'), url('fonts/AvenirLTStd-Roman.woff') format('woff'), url('fonts/AvenirLTStd-Roman.ttf') format('truetype'), url('fonts/AvenirLTStd-Roman.svg') format('svg');
-	font-weight: normal;
-	font-style: italic;
+	src: url('fonts/AvenirLTStd-Book.eot');
+	src: local('вє'), url('fonts/AvenirLTStd-Book.woff') format('woff'), url('fonts/AvenirLTStd-Book.ttf') format('truetype'), url('fonts/AvenirLTStd-Book.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
 }
 
 html, body {
@@ -256,6 +248,78 @@ main {
 .active-dots {
   background-color: #0000EB;
 }
+
+
+.blocke-sale {
+  margin: 20px 0;
+  position: relative;
+}
+
+.blocke-sale-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.active-sale {
+  
+}
+
+.sale-slider-picture img{
+  height: 500px;
+}
+
+.sale-slider-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 15px 0 ;
+}
+
+.sale-item a {
+  font-size: 30px;
+  color: #000;
+}
+
+.sale-sides {
+  display: flex;
+}
+
+.sale-prev {
+  font-size: 30px;
+  margin: 0 10px 0 0;
+  background-color: #FAF9F9
+}
+
+.sale-next {
+  font-size: 30px;
+  background-color: #FAF9F9;
+}
+
+.sale-slider-picture-img {
+}
+
+.sale-slider-picture-img img{
+  height: 350px;
+  width: 500px;
+}
+
+.sale-slider-text {
+
+}
+
+.sale-slider-text h2 {
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+}
+
+.sale-slider-text p {
+  font-size: 18px;
+
+}
+
+
 
 .image-style {
   margin: 50px 0;
