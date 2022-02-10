@@ -318,9 +318,10 @@ footer p {
   justify-content: space-around;
 }
 
+/* main page */
+
 .mail-contry, .mail {
   margin: 20px 0;
-  
 }
 
 .mail, .country, .mail input {
@@ -349,3 +350,4 @@ footer p {
   display: flex;
   flex-direction: column;
 }
+
