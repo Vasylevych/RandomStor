@@ -95,15 +95,13 @@ main {
 }
 
 .top-baner-block {
-  background: url(https://manrule.ru/images/article/orig/2020/03/muzhskaya-odezhda-lacoste-assortiment-i-tablica-razmerov.jpg) no-repeat;
+  background: url(https://manrule.ru/images/article/orig/2020/03/muzhskaya-odezhda-lacoste-assortiment-i-tablica-razmerov.jpg) 0 0 / auto no-repeat;
   height: 750px;
-  position: relative;
+  width: 100%;
 }
 
 .top-baner-block-text {
-  max-width: 1300px;
-  margin: 50px 0 0 20px;
-  position: absolute;
+  margin: 10px 0;
 }
 
 .top-baner-item {
@@ -242,7 +240,7 @@ main {
   cursor: pointer;
 }
 
-.slider-dots-item:last-child{
+.slider-dots-item:last-child {
   margin: 0;
 }
 .active-dots {
@@ -251,23 +249,34 @@ main {
 
 
 .blocke-sale {
-  margin: 20px 0;
+  margin: 10px 0;
   position: relative;
+}
+.sale-slider {
+  overflow: hidden;
 }
 
 .blocke-sale-slider {
+   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 1300px;
+  height: 700px;
+}
+
+.sale-slider-track {
+  display: flex;
+  justify-content:space-between;
+  transition: 0.2s;
   width: 100%;
-  height: 100%;
+}
+.sale-slider-picture-text {
+  margin: 0 100px 0 0px;
+
 }
 
-.active-sale {
-  
-}
-
-.sale-slider-picture img{
+.sale-slider-picture img {
   height: 500px;
 }
 
@@ -279,10 +288,10 @@ main {
 
 .sale-item a {
   font-size: 30px;
-  color: #000;
+  color: #000000;
 }
 
-.sale-sides {
+.sale-sides-btn {
   display: flex;
 }
 
@@ -297,16 +306,9 @@ main {
   background-color: #FAF9F9;
 }
 
-.sale-slider-picture-img {
-}
-
-.sale-slider-picture-img img{
+.sale-slider-picture-img img {
   height: 350px;
   width: 500px;
-}
-
-.sale-slider-text {
-
 }
 
 .sale-slider-text h2 {
@@ -316,13 +318,12 @@ main {
 
 .sale-slider-text p {
   font-size: 18px;
-
 }
 
 
 
 .image-style {
-  margin: 50px 0;
+  margin: 10px 0 50px 0;
   position: relative;
 }
 
@@ -386,7 +387,7 @@ footer p {
 .mail, .country, .mail input {
   height: 22px;
   font-size: 20px;
-  box-shadow: 2px 2px 2px  #6D6565;
+  box-shadow: 1px 1px 1px  #6D6565;
   background: #FAF9F9;
 }
 
