@@ -54,8 +54,6 @@ function slider(){
 }
 slider();
 
-
-
 // Slider-----------------------
 
 function slideres(){
@@ -81,19 +79,6 @@ function slideres(){
     
     //calculate the width of the element
    
-  
-
-
-
-
-
-
-
-
-
-
-    
-
     let prevBtn = document.querySelector('.sale-slider');
     prevBtn.addEventListener('click', function(e){
 
@@ -132,3 +117,4 @@ function slideres(){
 
     }
     slideres()
+
