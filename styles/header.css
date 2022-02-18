@@ -45,17 +45,18 @@
   }
 
   /* hover */
-  .menu-link-first:hover .absol{
+  .menu-link-first:hover .absol {
     display: block;
    
   }
-  .color{
+
+  .color {
     background-color: #FAF9F9;
     height: 100%;
     width: 100%;
   }
 
-  .absol{
+  .absol {
     display: none;
     position: absolute;
     left: 0;
@@ -86,12 +87,14 @@
     display: flex;
     justify-content: space-between;
   }
-  .hover-flex h2{
+
+  .hover-flex h2 {
     margin: 20px 0 15px 0 ;
     font-size: 16px;
     font-weight: 700;
   }
-  .hover-flex a{
+
+  .hover-flex a {
     display: inline-block;
     padding: 15px 0 0 0;
   }
@@ -100,21 +103,22 @@
     display: flex;
     flex-direction: column;
   }
-  .shop-by-theme img{
+
+  .shop-by-theme img {
     width: 260px;
     height: 260px;
   }
-  .shop-by-theme h3{
+
+  .shop-by-theme h3 {
     font-size: 16px;
     font-weight: 700;
     margin: 15px 0 0 0;
-
   }
-  .shop-by-theme p{
+
+  .shop-by-theme p {
     margin: 15px 0 0 0;
     font-size: 14px;
     color: #6D6565;
-
   }
 
 
