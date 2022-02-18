@@ -1,0 +1,58 @@
+
+footer a {
+  color: #6D6565;
+  margin: 15px 0 0 0;
+}
+  
+footer a:last-child {
+  margin-bottom: 20px;
+}
+  
+footer a:hover {
+  text-decoration: underline;
+}
+  
+footer p {
+  margin: 50px 0 20px 0 ;
+}
+  
+.line {
+  border-top: 2px solid #6D6565;
+}
+  
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+}
+  
+.mail-contry, .mail {
+  margin: 20px 0;
+}
+
+.mail, .country, .mail input {
+  height: 22px;
+  width: 250px;
+  font-size: 20px;
+  border-bottom: 2px solid #6D6565;
+  background-color: #FAF9F9;
+}
+  
+.oll-information {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.about {
+  display: flex;
+  flex-direction: column;
+}
+  
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+}
