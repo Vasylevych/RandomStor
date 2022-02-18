@@ -1,86 +1,27 @@
-// Slider-----------------------
-
-function slider(){
+function slider(baner, tracks, prev, next, slider, parent, number){
     let position = 0;
-    const slidesToShow = 3;//the elements we see are active
+    const slidesToShow = number;//the elements we see are active
     SlidesToScroll = 1; //how many elements do we scroll
-    const container = document.querySelector('.baner-slideshow-container');
-    const track = document.querySelector('.slider-track');
-    const btnPrev = document.querySelector('.btn-prev');
-    const btnNext = document.querySelector('.btn-next');
-    const items = document.querySelectorAll('.slider-items');
-    const itemsCount = items.length;//number of elements
-    const itemWidth = container.clientWidth / slidesToShow; //the width of our element
-    const movePosition = SlidesToScroll * itemWidth; //the size of the width by how much to scroll
-    const circle = document.querySelector('.slider-dots');
-
-    circle.addEventListener('click', function(e){
-    let point = e.target.dataset.position;
-    point = Number(point);
-
-    })
-
-    //calculate the width of the element
-    items.forEach((item) =>{
-        item.getElementsByClassName.minWidth = `${itemWidth}px`;
-    });
-    //button in front
-    btnNext.addEventListener('click', () => {
-        const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-        position -= itemsLeft >= SlidesToScroll ? movePosition : itemsLeft * itemWidth;
-        console.log(position);
-        setPosition();
-        checkBtns();
-    });
-    // button in back
-    btnPrev.addEventListener('click', () => {
-        const itemsLeft = Math.abs(position) / itemWidth;
-        position += itemsLeft >= SlidesToScroll ? movePosition : itemsLeft * itemWidth;
-        console.log(position);
-        setPosition();
-        checkBtns();
-    });
-
-    const setPosition = () => {
-        track.style.transform = `translateX(${position}px)`;
-    };
-    //when scrolling to the extreme element, make the button inactive
-    const checkBtns = () => {
-        btnPrev.disabled = position === 0;
-        btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
-    };
-
-    checkBtns();
-}
-slider();
-
-// Slider-----------------------
-
-function slideres(){
-    let position = 0;
-    const slidesToShow = 1;//the elements we see are active
-    SlidesToScroll = 1; //how many elements do we scroll
-    const container = document.querySelector('.sale-slider');
-    const track = document.querySelector('.sale-slider-track');
-    const btnPrev = document.querySelector('.sale-prev');
-    const btnNext = document.querySelector('.sale-next');
-    const items = document.querySelectorAll('.sale-slider-items');
+    const container = document.querySelector(baner);
+    const track = document.querySelector(tracks);
+    const btnPrevs = document.querySelectorAll(prev);
+    const btnNexts = document.querySelectorAll(next);
+    const items = document.querySelectorAll( slider);
     const itemsCount = items.length;//number of elements
     const itemWidth = container.clientWidth / slidesToShow; //the width of our element
     const movePosition = SlidesToScroll * itemWidth; //the size of the width by how much to scroll
 
     // const circle = document.querySelector('.slider-dots');
-    
-    // circle.addEventListener('click', function(e){
-    //    let point = e.target.dataset.position;
-    //    point = Number(point);
-    
-    // })
+
+//     // circle.addEventListener('click', function(e){
+//     // let point = e.target.dataset.position;
+//     // point = Number(point);
     
     //calculate the width of the element
-   
-    let prevBtn = document.querySelector('.sale-slider');
-    prevBtn.addEventListener('click', function(e){
+
+    let parentContainer = document.querySelector(parent);
+    parentContainer.addEventListener('click', function(e){
+        
 
         items.forEach((item) =>{
             item.getElementsByClassName.minWidth = `${itemWidth}px`;
@@ -88,6 +29,7 @@ function slideres(){
 
         const direction = e.target.dataset.direction;
        if( direction === 'left'){
+           console.log(direction)
             const itemsLeft = Math.abs(position) / itemWidth;
             position += itemsLeft >= SlidesToScroll ? movePosition : itemsLeft * itemWidth;
             setPosition();
@@ -108,13 +50,22 @@ function slideres(){
     };
     //when scrolling to the extreme element, make the button inactive
     const checkBtns = () => {
-        btnPrev.disabled = position === 0;
-        btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
-        console.log(btnNext.disabled)
+       
+        btnPrevs.forEach(function(btnPrev){
+            btnPrev.disabled = position === 0;
+        });
+        btnNexts.forEach(function(btnNext){
+            btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+
+        });
+        
     };
     
+    console.log(btnPrevs)
+    
     checkBtns();
+}
 
-    }
-    slideres()
+    slider('.baner-slideshow-container', '.slider-track', '.btn-prev', '.btn-next', '.slider-items', '.baner-slideshow', 3);
+    slider('.sale-slider', '.sale-slider-track', '.prev', '.next', '.sale-slider-items', '.sale-slider', 1);
 
