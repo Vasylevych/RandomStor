@@ -1,0 +1,104 @@
+.mens-best-steps {
+    display: flex;
+}
+
+.mens-best-steps h2 {
+    margin: 30px 0 30px 10px;
+    font-size: 14px;
+}
+
+.mens-best-steps span {
+    margin: 0 0 0 5px;
+}
+
+.mens-best-steps h2:first-child{
+    margin-left: 0;
+}
+
+.mens-items-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mens-item {
+    margin: 15px 0 30px 0px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.mens-filter {
+    display: flex;
+}
+
+.mens-filter span {
+    font-weight: 700;
+    padding: 0 0 0 3px;
+    cursor: pointer;
+}
+
+.arow-filter {
+    position: relative;
+}
+
+.filter-open, .sort-open {
+    position: absolute;
+    display: none;
+    padding: 20px 0 0 0 ;
+}
+
+.open, .openSort {
+    display: block;  
+ }
+.sort, .filter {
+    margin: 0 15px 0 0;
+}
+
+.mens-best-product {
+    display: flex;
+}
+
+.product-mens-best {
+    flex: 0 1 33.333%;
+}
+
+.product-img img {
+    height: 370px;   
+}
+
+.product-name {
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #6D6565;
+}
+
+.product-price {
+    margin: 15px 0 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #304224;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d3c5c5;
+    width: 230px;
+    height: 80px;
+    margin: 50px 0;
+    font-size: 22px;
+    color: #6D6565;
+    transition: 0.3s ease all;
+}  
+
+.btn-button:hover {
+    background-color: #6D6565;
+    color: #d3c5c5
+}
