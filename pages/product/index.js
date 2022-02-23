@@ -1,32 +1,18 @@
-let filterrOpen = document.querySelector(".filter-open");
-let filter = document.querySelector(".filter");
-    filter.addEventListener('click', function(e){
-        const direction = e.target.dataset.filter;
-            if(direction === "filter"){
-                filterrOpen.classList.toggle("open");
-                console.log(direction)
-            }   
-});
-
-let sortOpen = document.querySelector(".sort-open");
-let sort = document.querySelector(".sort");
-    sort.addEventListener('click', function(e){
-        const direction = e.target.dataset.sort;
-            if(direction === "sort"){
-                sortOpen.classList.toggle("openSort");
-                console.log(direction)
-            }  
-});
+let arrows = document.getElementsByClassName('arows');
+for(let i = 0; i < arrows.length; i++){ 
+    arrows[i].addEventListener('click', function(e){
+      const container = document.getElementById(e.target.dataset.arows);
+      console.log(container);
+      container.classList.toggle('open');  
+    })
+};
 
 
-// let filterrOpen = document.querySelectorAll(".filter-open");
-// let filter = document.querySelectorAll(".filter");
-// for(let i = 0; i < filter.length; i++){
-//     filter[i].addEventListener('click', function(){
-//         filterrOpen.classList.toggle(".open");
-//         console.log(filter[i])
-//     })
-
-// };
-
-
+document.addEventListener('click', documentAction);
+function documentAction(e){
+    const targetElem = e.target;
+    if (targetElem.classList.contains('arow')) {
+        targetElem.closest('.arows').classList.toggle('rotte')
+        
+    }
+}

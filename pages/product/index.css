@@ -1,63 +1,92 @@
-.mens-best-steps {
+.men-best-steps {
     display: flex;
 }
 
-.mens-best-steps h2 {
+.men-best-steps h2 {
     margin: 30px 0 30px 10px;
     font-size: 14px;
 }
 
-.mens-best-steps span {
+.men-best-steps span {
     margin: 0 0 0 5px;
 }
 
-.mens-best-steps h2:first-child{
+.men-best-steps h2:first-child{
     margin-left: 0;
 }
 
-.mens-items-flex {
+.men-items-flex {
     display: flex;
     justify-content: space-between;
 }
 
-.mens-item {
+.men-item {
     margin: 15px 0 30px 0px;
     font-size: 24px;
     font-weight: 700;
 }
 
-.mens-filter {
+.men-filter {
     display: flex;
 }
 
-.mens-filter span {
+.men-filter span {
     font-weight: 700;
     padding: 0 0 0 3px;
     cursor: pointer;
 }
 
-.arow-filter {
+.filter-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
     position: relative;
 }
 
-.filter-open, .sort-open {
-    position: absolute;
-    display: none;
-    padding: 20px 0 0 0 ;
+.filter-info {
+    font-size: 14px;
+    max-height: auto;
 }
 
-.open, .openSort {
-    display: block;  
- }
-.sort, .filter {
-    margin: 0 15px 0 0;
+ .open-arows {
+    padding: 5px 0 0 0;
+    font-size: 14px;
+    display: none;    
+} 
+
+.open {
+   display: block; 
 }
 
-.mens-best-product {
+.open p {
+    padding: 5px 0 0 0;
+}
+
+.rotte {
+    display: block;
+    margin-bottom: auto;
+    transform: rotate(180deg);
+    transition: 0.3s ease all;
+}
+
+.arows {
+    font-size: 14px;
     display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease all;     
 }
 
-.product-mens-best {
+.men-best-product {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.men-best-product:last-child {
+    margin-bottom: 0;
+}
+
+.product-men-best {
     flex: 0 1 33.333%;
 }
 
@@ -89,7 +118,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #d3c5c5;
+    border: 2px solid #D3C5C5;
     width: 230px;
     height: 80px;
     margin: 50px 0;
@@ -100,5 +129,5 @@
 
 .btn-button:hover {
     background-color: #6D6565;
-    color: #d3c5c5
+    color: #D3C5C5;
 }
